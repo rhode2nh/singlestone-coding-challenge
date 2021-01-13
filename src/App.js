@@ -1,5 +1,5 @@
-import './App.css';
 import React, { useEffect } from 'react'
+import Header from './components/Header'
 
 const App = () => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const App = () => {
   }
 
   return (
-    <h2>test</h2>
+    <Header />
   )
 }
 
