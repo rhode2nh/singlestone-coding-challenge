@@ -1,3 +1,115 @@
-.how-it-works {
-    text-align: center;
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
 }
+
+li {
+    display: inline-block;
+    text-align: center;
+    font-size: 70%;
+    overflow-wrap: break-word;
+}
+
+.layout {
+    background: white;
+    display: grid;
+    grid-template-columns: 10% 5% auto 5% 10%;
+    grid-template-rows: 10% auto auto;
+}
+
+.test {
+    background: black;
+}
+
+.header {
+    background-color: #252525;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.logo {
+    width: 12%;
+    margin-left: 9%;
+}
+
+.how-it-works {
+    font-family: "Lato", serif;
+    font-size: 150%;
+    text-align: center;
+    padding: 0;
+}
+
+.footer {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: span 4;
+}
+
+.button {
+    font-family: "Lato", serif;
+    background-color: #21f1ce;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.img2 {
+
+}
+
+.container {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.container2 {
+    position: absolute
+}
+
+.number {
+    width: 65px;
+    position: relative;
+    font-family: 'Lato Light';
+    font-size: 200%;
+    margin: 0;
+    height: 70%;
+    left: 50%;
+    transform: translateX(-50%);}
+
+.body {
+    font-family: 'Lato Light';
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rectangle {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 110%;
+    border-bottom: 5px solid #21f1ce;
+}
+
+.border {
+    width: 75%
+}
+

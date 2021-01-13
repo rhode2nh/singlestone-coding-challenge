@@ -1,12 +1,14 @@
 import React from 'react'
-
 const Step = ({ step }) => {
   return (
-    <React.Fragment>
-      <p>{step.stepNumber}</p>
-      <h1>{step.title}</h1>
-      <h2>{step.body}</h2>
-    </React.Fragment>
+    <li>
+      <div className='number'>
+        <h1>0{step.stepNumber}</h1>
+        <div className='rectangle'></div>
+      </div>
+      <h2>{step.title}</h2>
+      <h3 className='body'>{step.body}</h3>
+    </li>
   )
 }
 

@@ -5,10 +5,12 @@ import Step from '../components/Step'
 
 const Steps = ({ steps }) => {
   return (
-    <>
+    <div className='footer'>
       <HowItWorks />
-      {steps.map(step => <Step step={step} />)}
-    </>
+      <ul>
+        {steps.map(step => <Step step={step} />)}
+      </ul>
+    </div>
   )
 }
 

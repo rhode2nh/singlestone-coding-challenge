@@ -4,10 +4,10 @@ import background from '../images/photo-couch.jpg'
 
 const Main = () => {
   return (
-    <React.Fragment>
-      <img src={background} />
+    <div className='container'>
+      <img className='img1' src={background} />
       <GetStarted />
-    </React.Fragment>
+    </div>
   )
 }
 

@@ -3,7 +3,9 @@ import logo from '../images/logo-endless.svg'
 
 const Header = () => {
   return (
-    <img src={logo} />
+    <div className='header'>
+      <img className='logo' src={logo}/>
+    </div>
   )
 }
 

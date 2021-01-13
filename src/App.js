@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Header from './components/Header'
 import Main from './containers/Main'
 import Steps from './containers/Steps'
+import './App.css'
 
 const App = () => {
   const [steps, setSteps] = useState([])
@@ -36,11 +37,13 @@ const App = () => {
   }
 
   return (
-    <React.Fragment>
-      <Header />
-      <Main />
-      <Steps steps={steps}/>
-    </React.Fragment>
+    <div className='test'>
+      <div className='layout'>
+        <Header />
+        <Main />
+        <Steps steps={steps}/>
+      </div>
+    </div>
   )
 }
 
