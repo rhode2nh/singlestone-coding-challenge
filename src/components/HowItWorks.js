@@ -1,8 +1,9 @@
 import React from 'react'
+import '../App.css'
 
 const HowItWorks = () => {
   return (
-    <p>How It Works</p>
+    <p className='how-it-works'>How It Works</p>
   )
 }
 
