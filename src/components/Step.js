@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Step = ({ num }) => {
+const Step = ({ step }) => {
   return (
-    <h1>Step {num}</h1>
+    <React.Fragment>
+      <p>{step.stepNumber}</p>
+      <h1>{step.title}</h1>
+      <h2>{step.body}</h2>
+    </React.Fragment>
   )
 }
 

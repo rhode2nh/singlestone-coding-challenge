@@ -3,12 +3,11 @@ import HowItWorks from '../components/HowItWorks'
 import Step from '../components/Step'
 
 
-const Steps = () => {
-  let test = [1, 2, 3, 4]
+const Steps = ({ steps }) => {
   return (
     <>
       <HowItWorks />
-      {test.map(number => <Step num={number} />)}
+      {steps.map(step => <Step step={step} />)}
     </>
   )
 }
