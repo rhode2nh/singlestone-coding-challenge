@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from './components/Header'
+import Main from './containers/Main'
+import Steps from './containers/Steps'
 
 const App = () => {
   useEffect(() => {
@@ -14,7 +16,11 @@ const App = () => {
   }
 
   return (
-    <Header />
+    <React.Fragment>
+      <Header />
+      <Main />
+      <Steps />
+    </React.Fragment>
   )
 }
 
