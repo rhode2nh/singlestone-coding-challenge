@@ -47,9 +47,12 @@ li {
 }
 
 .footer {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row: 4
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row: 4;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: white;
 }
 
 .button {
@@ -60,10 +63,16 @@ li {
     font-size: 1.4vw;
     height: 3vw;
     width: 13vw;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #9bf1e6;
 }
 
 .img1 {
     width: 100%;
+    height: 100%;
 }
 
 .background {
@@ -134,5 +143,9 @@ li {
 
 .border {
     width: 75%
+}
+
+.background-color {
+    background-color: black;
 }
 

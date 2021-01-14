@@ -38,7 +38,7 @@ const App = () => {
   }
 
   return (
-    <div className='layout'>
+    <div className='layout background-color'>
       <Header />
       <MainBackground />
       <MainContent />
