@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from './components/Header'
 import MainBackground from './containers/MainBackground'
-import Steps from './containers/Steps'
+import Footer from './containers/Footer'
 import './App.css'
 import MainContent from "./components/MainContent";
 
@@ -42,7 +42,7 @@ const App = () => {
       <Header />
       <MainBackground />
       <MainContent />
-      <Steps steps={steps}/>
+      <Footer steps={steps}/>
     </div>
   )
 }

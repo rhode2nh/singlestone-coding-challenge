@@ -3,7 +3,7 @@ import HowItWorks from '../components/HowItWorks'
 import Step from '../components/Step'
 
 
-const Steps = ({ steps }) => {
+const Footer = ({ steps }) => {
   return (
     <div className='footer'>
       <HowItWorks />
@@ -14,4 +14,4 @@ const Steps = ({ steps }) => {
   )
 }
 
-export default Steps
+export default Footer
