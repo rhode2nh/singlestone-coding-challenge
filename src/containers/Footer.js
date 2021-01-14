@@ -8,7 +8,7 @@ const Footer = ({ steps }) => {
     <div className='footer'>
       <HowItWorks />
       <ul>
-        {steps.map(step => <Step step={step} />)}
+        {steps.map(step => <Step key={step.id} step={step} />)}
       </ul>
     </div>
   )

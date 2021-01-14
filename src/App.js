@@ -19,6 +19,7 @@ const App = () => {
     let sanitizedSteps = steps.map(step => {
       const stepContent = step.versionContent.reduce((prev, cur) => (prev.effectiveDate > cur.effectiveDate) ? prev : cur)
       return {
+        id: step.id,
         body: stepContent.body,
         title: stepContent.title,
         stepNumber: step.stepNumber
