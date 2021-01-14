@@ -1,6 +1,10 @@
+* {
+    font-family: Lato, sans-serif;
+}
+
 ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
     list-style-type: none;
@@ -11,19 +15,15 @@ ul {
 li {
     display: inline-block;
     text-align: center;
-    font-size: 70%;
+    font-size: 1.0vw;
     overflow-wrap: break-word;
+    width: 40%;
 }
 
 .layout {
-    background: white;
     display: grid;
-    grid-template-columns: 10% 5% auto 5% 10%;
-    grid-template-rows: 10% auto auto;
-}
-
-.test {
-    background: black;
+    grid-template-columns: 10% 10% auto 10% 10%;
+    grid-template-rows: 10% 25% 25% 10% 30%;
 }
 
 .header {
@@ -36,62 +36,84 @@ li {
 
 .logo {
     width: 12%;
-    margin-left: 9%;
+    margin-left: 13%;
 }
 
 .how-it-works {
-    font-family: "Lato", serif;
-    font-size: 150%;
+    font-size: 2vw;
     text-align: center;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .footer {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: span 4;
+    grid-row: 4
 }
 
 .button {
-    font-family: "Lato", serif;
     background-color: #21f1ce;
     border: none;
-    border-radius: 8px;
-    padding: 10px;
+    border-radius: 2vw;
+    text-align: center;
+    font-size: 1.4vw;
+    height: 3vw;
+    width: 13vw;
 }
 
 .img1 {
     width: 100%;
 }
 
-.img2 {
-
-}
-
-.container {
+.background {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-.container2 {
-    position: absolute
+.main-content {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: white;
+    font-size: 1.5vw;
+    margin-top: 35%;
+}
+
+.main-content-1 {
+    margin-bottom: 1%;
+    font-family: 'Lato Light', serif;
+}
+
+.main-content-2 {
+    margin: 0;
+    font-size: 200%;
+    font-family: 'Lato Light', serif;
+}
+
+.main-content-3 {
+    overflow-wrap: break-word;
+    font-size: 1.1vw;
+    width: 44%;
+    margin-bottom: 4%;
 }
 
 .number {
-    width: 65px;
+    width: 30%;
     position: relative;
-    font-family: 'Lato Light';
-    font-size: 200%;
+    font-family: 'Lato Light', serif;
+    font-size: 1.5vw;
     margin: 0;
     height: 70%;
     left: 50%;
-    transform: translateX(-50%);}
+    transform: translateX(-50%);
+}
 
 .body {
-    font-family: 'Lato Light';
+    font-family: 'Lato Light', serif;
 }
 
 .centered {
@@ -102,11 +124,12 @@ li {
 }
 
 .rectangle {
-    width: 100%;
+    width: 70%;
     height: 5%;
+    left: 15%;
     position: absolute;
     top: 110%;
-    border-bottom: 5px solid #21f1ce;
+    border-bottom: 3px solid #21f1ce;
 }
 
 .border {

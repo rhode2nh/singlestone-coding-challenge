@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Header from './components/Header'
-import Main from './containers/Main'
+import MainBackground from './containers/MainBackground'
 import Steps from './containers/Steps'
 import './App.css'
+import MainContent from "./components/MainContent";
 
 const App = () => {
   const [steps, setSteps] = useState([])
@@ -37,12 +38,11 @@ const App = () => {
   }
 
   return (
-    <div className='test'>
-      <div className='layout'>
-        <Header />
-        <Main />
-        <Steps steps={steps}/>
-      </div>
+    <div className='layout'>
+      <Header />
+      <MainBackground />
+      <MainContent />
+      <Steps steps={steps}/>
     </div>
   )
 }

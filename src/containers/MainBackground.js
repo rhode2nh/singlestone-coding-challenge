@@ -1,14 +1,12 @@
 import React from 'react'
-import GetStarted from '../components/GetStarted'
 import background from '../images/photo-couch.jpg'
 
-const Main = () => {
+const MainBackground = () => {
   return (
-    <div className='container'>
+    <div className='background'>
       <img className='img1' src={background} />
-      <GetStarted />
     </div>
   )
 }
 
-export default Main
+export default MainBackground
